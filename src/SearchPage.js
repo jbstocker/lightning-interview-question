@@ -54,8 +54,8 @@ export default class SearchPage extends Lightning.Component {
      * The global variable `query` has been instantiated in the _init() function, please use this to
      * store changes to the input based on keyboard events
      * Note: Input should be removed when the 'Backspace' key is pressed
-     * 
-     * The end of this method has been provided below but you will need to ensure this.query is 
+     *
+     * The end of this method has been provided below but you will need to ensure this.query is
      * populated correctly as you type on the keyboard
      */
     this._Input.inputText = this.query;
@@ -77,7 +77,7 @@ export default class SearchPage extends Lightning.Component {
      * Challenge 3 - populate tiles with results
      * In the section below please use the results from the api call (stored in 'data') to populate two arrays of 5 tiles objects each
      * Hint: You will need to first clear the results before populating.
-     * 
+     *
      * The data returned is an array of show data.  In particular we are interested with two values in each show:
      *      data[i].show.image.medium   -- This is the url of the image
      *      data[i].show.name           -- This is the string of the title of the image
