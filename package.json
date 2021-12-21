@@ -1,0 +1,19 @@
+{
+  "name": "lightning-interview-question",
+  "description": "Lightning-Interview-Question",
+  "dependencies": {
+    "@lightningjs/sdk": "^4.8.1",
+    "@lightningjs/ui-components": "^1.2.1"
+  },
+  "scripts": {
+    "start": "lng dev"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1"
+  }
+}
