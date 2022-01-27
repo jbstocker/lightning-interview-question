@@ -2,7 +2,7 @@
 
 ## lightning-interview
 
-The following repo is designed as a coding/interview challenge specifically for future/current Lightning JS developers. It uses a premade starter lightning application with some aspects missing from the final result. The goal of the excersize will be to address the missing items.
+The following repo is designed as a coding/interview challenge specifically for future/current Lightning JS developers. It uses a premade starter lightning application with some aspects missing from the final result. The goal of the exercise will be to address the missing items.
 
 The files that require modification are all within the `src` directory. Specifically `SearchPage.js`, `Tile.js` and `api.js` require some modification in order to achieve the final result.
 
