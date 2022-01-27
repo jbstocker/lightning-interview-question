@@ -8,15 +8,6 @@ The files that require modification are all within the `src` directory. Specific
 
 Knowledge of the lightning framework is not required but documentation for the framework can be found here: [Lightning Render Engine](https://rdkcentral.github.io/Lightning/docs/renderEngine/overview) for reference.
 
-## Getting started
-
-> Before you follow the steps below, make sure you have the
-> [Lightning-CLI](https://rdkcentral.github.io/Lightning-CLI/#/) installed _globally_ only your system
-
-```
-npm install -g @lightningjs/cli
-```
-
 #### Running and developing the App
 
 1. Install the NPM dependencies by running `npm install`

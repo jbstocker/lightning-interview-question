@@ -2,6 +2,7 @@
   "name": "lightning-interview-question",
   "description": "Lightning-Interview-Question",
   "dependencies": {
+    "@lightningjs/cli": "^2.7.2",
     "@lightningjs/sdk": "^4.8.1",
     "@lightningjs/ui-components": "^1.2.1"
   },
