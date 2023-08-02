@@ -1,6 +1,6 @@
-import { Lightning } from '@lightningjs/sdk'
+import { Lightning } from '@lightningjs/sdk';
 
-const placeholderText = 'Enter Search Term'
+const placeholderText = 'Enter Search Term';
 
 export default class Input extends Lightning.Component {
   static _template() {
@@ -27,24 +27,24 @@ export default class Input extends Lightning.Component {
           y: 50,
         },
       },
-    }
+    };
   }
 
   _init() {
-    this.firstEntry = false
+    this.firstEntry = false;
   }
 
   set inputText(input) {
     if (input.length > 0) {
-      this._Text.text.text = input
-      this._Text.alpha = 1
+      this._Text.text.text = input;
+      this._Text.alpha = 1;
     } else {
-      this._Text.text.text = placeholderText
-      this._Text.alpha = 0.5
+      this._Text.text.text = placeholderText;
+      this._Text.alpha = 0.5;
     }
   }
 
   get _Text() {
-    return this.tag('Text')
+    return this.tag('Text');
   }
 }

@@ -17,12 +17,12 @@
  * limitations under the License.
  */
 
-import { Lightning, Utils } from '@lightningjs/sdk'
-import SearchPage from './SearchPage'
+import { Lightning, Utils } from '@lightningjs/sdk';
+import SearchPage from './SearchPage';
 
 export default class App extends Lightning.Component {
   static getFonts() {
-    return [{ family: 'Regular', url: Utils.asset('fonts/Roboto-Regular.ttf') }]
+    return [{ family: 'Regular', url: Utils.asset('fonts/Roboto-Regular.ttf') }];
   }
 
   static _template() {
@@ -38,7 +38,7 @@ export default class App extends Lightning.Component {
         w: 1920,
         h: 1080,
       },
-    }
+    };
   }
 
   _init() {
@@ -58,10 +58,10 @@ export default class App extends Lightning.Component {
           },
         ],
       })
-      .start()
+      .start();
   }
 
   _getFocused() {
-    return this.tag('SearchPage')
+    return this.tag('SearchPage');
   }
 }

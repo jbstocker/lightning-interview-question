@@ -1,18 +1,18 @@
-import { Lightning } from "@lightningjs/sdk";
-import { Row, Column } from "@lightningjs/ui-components";
-import Input from "./Input";
-import Tile from "./Tile";
-import retrieveData from "./api/api";
+import { Lightning } from '@lightningjs/sdk';
+import { Row, Column } from '@lightningjs/ui-components';
+import Input from './Input';
+import Tile from './Tile';
+import retrieveData from './api/api';
 
 const defaultImage =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/480px-Blue_question_mark_icon.svg.png";
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/480px-Blue_question_mark_icon.svg.png';
 export default class SearchPage extends Lightning.Component {
   static _template() {
     return {
       Input: {
         type: Input,
         w: 1920,
-        h: 50
+        h: 50,
       },
       ResultsColumn: {
         x: 175,
@@ -21,25 +21,25 @@ export default class SearchPage extends Lightning.Component {
         h: 980,
         type: Column,
         itemSpacing: 100,
-        plinko: true
-      }
+        plinko: true,
+      },
     };
   }
 
   _init() {
-    this.query = "";
+    this.query = '';
   }
 
   get _Input() {
-    return this.tag("Input");
+    return this.tag('Input');
   }
 
   get _ResultsRow() {
-    return this.tag("ResultsRow");
+    return this.tag('ResultsRow');
   }
 
   get _ResultsColumn() {
-    return this.tag("ResultsColumn");
+    return this.tag('ResultsColumn');
   }
 
   /**
@@ -58,6 +58,7 @@ export default class SearchPage extends Lightning.Component {
      * The end of this method has been provided below but you will need to ensure this.query is
      * populated correctly as you type on the keyboard
      */
+    console.log('event.key:', event.key);
     this._Input.inputText = this.query;
     this.retrieveData(this.query);
   }
@@ -69,6 +70,7 @@ export default class SearchPage extends Lightning.Component {
    */
   async retrieveData(query) {
     const data = await retrieveData(query);
+    console.log('data:', data);
     this.populateResults(data);
   }
 
@@ -121,8 +123,8 @@ export default class SearchPage extends Lightning.Component {
             h: 400,
             itemSpacing: 50,
             items: row,
-            skipPlinko: false
-          }
+            skipPlinko: false,
+          },
         ]);
       }
     }

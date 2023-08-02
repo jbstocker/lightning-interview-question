@@ -12,7 +12,7 @@ module.exports = {
   ],
   rules: {
     quotes: [2, 'single', 'avoid-escape'],
-    semi: [2, 'never'],
+    semi: [2, 'always'],
     'no-extra-boolean-cast': 'off',
     'no-unused-vars': [
       1,
@@ -27,7 +27,7 @@ module.exports = {
         trailingComma: true,
         singleQuote: true,
         tabWidth: 2,
-        semi: false,
+        semi: true,
         printWidth: 100,
       },
     ],
